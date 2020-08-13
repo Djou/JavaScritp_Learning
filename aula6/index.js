@@ -20,6 +20,7 @@ console.log(nome);
 //Não podem conter espacos ou tracos
 //Utilzamos camelCase
 //CaseSensitive
+//NÂO UTILIZE VAR, USE LET
 let nomeCliente = 'Luiz';
 let nomecliente = 'Pedro';
 
