@@ -19,3 +19,5 @@ console.log(umaString.slice(2, 6));
 console.log(umaString.slice(-3));
 console.log(umaString.slice(-5, umaString.length -1));
 console.log(umaString.length -3);
+console.log(umaString.substring(umaString.length -1));
+console.log(umaString.split(' ', 3));
