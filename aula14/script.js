@@ -21,3 +21,7 @@ console.log(umaString.slice(-5, umaString.length -1));
 console.log(umaString.length -3);
 console.log(umaString.substring(umaString.length -1));
 console.log(umaString.split(' ', 3));
+
+console.log(umaString.toUpperCase);
+console.log(umaString.toLowerCase);
+

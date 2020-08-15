@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios String</title>
+</head>
+<body>
+    <script>
+        const nome = prompt('Digite seu nome');
+        //Nunca é usado
+        //window.document.write(nome);
+
+        window.document.body.innerHTML = nome;   
+        window.document.body.innerHTML += nome;
+        window.document.body.innerHTML += nome;
+        window.document.body.innerHTML += '<br>'; 
+        window.document.body.innerHTML += nome;
+
+        const nomeCompleto = prompt('Digite seu nome completo:');
+        window.document.body.innerHTML += `O seu nome é ${nome}`;
+
+    </script>
+</body>
+</html>
