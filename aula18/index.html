@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Number e Math</title>
+</head>
+<body>
+    <script>
+        const numeroBase = prompt('Digite um número : ');
+        document.body.innerHTML += '<h1> Seu numero é : ' + numeroBase + '</h1> <br>';
+        document.body.innerHTML += 'Raiz Qudradra : ' + Math.sqrt(numeroBase) + '<br>';
+        document.body.innerHTML += numeroBase + ' é inteiro : ' + Number.isInteger(numeroBase) + '<br>';
+        document.body.innerHTML += numeroBase + ' é NaN : ' + isNaN(numeroBase) + '<br>';
+        document.body.innerHTML += 'Arredondamento para baixo: ' + Math.floor(numeroBase) + '<br>';
+        document.body.innerHTML += 'Arredondamento para alto: ' + Math.ceil(numeroBase) + '<br>';
+        document.body.innerHTML += 'Com duas casas decimais : ' + Math.round(numeroBase, 2) + '<br>';
+    </script>
+    
+</body>
+</html>
