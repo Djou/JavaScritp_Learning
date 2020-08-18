@@ -22,8 +22,26 @@ console.log(alunos);
 alunos.unshift('inicio');
 console.log(alunos);
 
-const removido = alunos.pop();
+const removidoUltimo = alunos.pop();
 console.log(alunos);
-console.log(removido);
+console.log(removidoUltimo);
+
+const removidoPrimeiro = alunos.shift();
+console.log(alunos);
+console.log(removidoPrimeiro);
+
+
+//delete alunos[1]; //Fica elemento vazio
+
+
+alunos.push('Luiza');
+alunos.push('Eduardo');
+
+console.log(alunos.slice(0,-1));
+
+
+console.log(typeof alunos);
+console.log(alunos instanceof Array);
+
 
 
