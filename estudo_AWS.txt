@@ -1,0 +1,195 @@
+AWS Certification Study
+
+Termos
+
+AWS Cloud computing platform
+Amazon Simple Storage Service (Amazon S3) 
+Amazon Glacier Storage
+Amazon Elastic Compute Cloud (Amazon EC2)
+Amazon Elastic Block Store (Amazon EBS)
+Amazon Virtual Private Cloud (Amazon VPC)
+Elastic Load Balancing
+Amazon CloudWatch
+Auto Scaling
+AWS Identity and Access Management (IAM)
+Amazon Relational Database Service (Amazon RDS)
+
+Amazon DynamoDB
+Amazon Redshift
+	relational databases, NoSQL databases, and data warehouses.
+
+SQS, SWF, and SNS
+Amazon Simple Queue Service (Amazon SQS)
+Amazon Simple Workflow Service (SWF)
+Amazon Simple Notification Service (Amazon SNS)
+Domain Name System (DNS) 
+Amazon Route 53
+Amazon ElastiCache
+Additional Key Services
+Amazon CloudFront
+AWS Storage Gateway
+AWS Directory Service
+AWS Key Management Service (KMS)
+AWS CloudHSM
+AWS CloudTrail
+Amazon Kinesis
+Amazon Elastic Map Reduce (Amazon EMR)
+AWS Data Pipeline
+AWS Import/Export
+AWS OpsWorks
+AWS CloudFormation
+AWS Elastic Beanstalk
+AWS Trusted Advisor
+AWS Config
+
+
+Objetivos do Exame : 
+
+Projetar e implantar sistemas escaláveis, altamente disponíveis e tolerantes a falhas na AWS
+Migração de aplicativos locais existentes para AWS
+Entrada e saída de dados de e para AWS
+Seleção do serviço AWS apropriado com base em dados, computação, banco de dados ou requisitos de segurança
+Identificar o uso apropriado das práticas recomendadas de arquitetura da AWS
+Estimar os custos da AWS e identificar os mecanismos de controle de custos
+
+
+Em geral, os candidatos devem ter o seguinte:
+
+
+Um ou mais anos de experiência prática em projetos altamente disponíveis, com custo eficiente,
+sistemas distribuídos seguros, tolerantes a falhas e escalonáveis ​​na AWS
+Conhecimento profundo de pelo menos uma linguagem de programação de alto nível
+Capacidade de identificar e definir requisitos para um aplicativo baseado em AWS
+Experiência com implantação de sistemas híbridos com componentes locais e AWS
+Capacidade de fornecer melhores práticas para a construção de aplicativos seguros e confiáveis ​​na Plataforma AWS
+
+
+
+Vantagens da computação em nuvem
+Variable vs. Capital Expense(Despesa variavelÇ(GASTO POR USO) VS Despesa de capital(Aquisição TOTAL))
+Economies of Scale (Economies of Scale(Facil de escalar, e reflete em economia(Compra de equipamento))
+Stop Guessing Capacity(Adequação de capacidade para a operação necessária)
+Increase Speed and Agility(Melhor perforance, agilidade na organização como um todo)
+Focus on Business Differentiators(Remove foco em equipamento e manutenção, e muda o foco para a performance e negogios)
+Go Global in Minutes(Permite escalar aplicações a nivel global em minutos)
+Cloud Computing Deployment Models(Permite diversos modelos de deploy, (all-in cloud-based - hybrid deployment Exemplos), onde em cada sitauação é possivel operar diferente)
+
+
+
+
+Dicas :
+
+Você pode alcançar alta disponibilidade implantando seu aplicativo em vários
+Zonas de disponibilidade. Instâncias redundantes para cada camada (por exemplo, web, aplicativo e
+banco de dados) de um aplicativo deve ser colocado em zonas de disponibilidade distintas, assim
+criando uma solução multisite. No mínimo, o objetivo é ter uma cópia independente do
+cada pilha de aplicativos em duas ou mais zonas de disponibilidade.
+
+
+As organizações mantêm controle e propriedade completos sobre a região em que
+seus dados estão fisicamente localizados, permitindo que atendam à conformidade regional e aos dados
+requisitos de residência.
+
+Se você precisa de armazenamento tradicional em bloco ou arquivo, além do armazenamento Amazon S3, AWS
+fornece opções. O serviço Amazon EBS fornece armazenamento em nível de bloco para Amazon
+Instâncias do Elastic Compute Cloud (Amazon EC2). Amazon Elastic File System (AWS EFS)
+fornece armazenamento de arquivo compartilhado conectado à rede (armazenamento NAS) usando o protocolo NFS v4.
+
+
+É uma prática recomendada usar nomes de intervalo que contenham seu nome de domínio e
+estar em conformidade com as regras para nomes DNS. Isso garante que seus nomes de intervalo sejam seus,
+pode ser usado em todas as regiões e pode hospedar sites estáticos.
+
+
+Por conveniência, o console Amazon S3 e o recurso Prefix and Delimiter
+permitem que você navegue em um bucket do Amazon S3 como se houvesse uma hierarquia de pastas.
+No entanto, lembre-se de que um intervalo é um único namespace simples de chaves sem estrutura.
+
+
+Sempre use HTTPS para solicitações de API do Amazon S3 para garantir que suas solicitações e
+os dados estão seguros.
+
+Amazon S3 originalmente suportava uma API SOAP (Simple Object Access Protocol) em
+além da API REST, mas você deve usar a API REST. O endpoint HTTPS legado
+ainda está disponível, mas novos recursos não são suportados
+
+
+Mesmo que o armazenamento do Amazon S3 ofereça durabilidade muito alta na infraestrutura
+nível, ainda é uma prática recomendada para se proteger contra exclusão acidental no nível do usuário ou
+sobrescrever dados usando recursos adicionais, como controle de versão, região cruzada
+replicação e exclusão de MFA.
+
+
+Use delimitadores e prefixos de objeto para organizar hierarquicamente os objetos em seu
+Buckets do Amazon S3, mas lembre-se sempre de que o Amazon S3 não é realmente um sistema de arquivos.
+
+
+
+
+
+
+*Security objectives for visibility, auditability, controllability, and agility.
+*AWS uses redundant and
+layered controls, continuous validation and testing, and a substantial amount of automation
+to ensure that the underlying infrastructure is monitored and protected 24/7.
+
+
+
+
+Certificaçãoes de segurança atendidas pelo AWS
+Service Organization Controls (SOC) 1/International Standard on Assurance
+Engagements (ISAE) 3402, SOC 2, and SOC 3
+Federal Information Security Management Act (FISMA), Department of Defense
+Information Assurance Certification and Accreditation Process (DIACAP), and Federal
+Risk and Authorization Management Program (FedRAMP)
+Payment Card Industry Data Security Standard (PCI DSS) Level 1
+International Organization for Standardization (ISO) 9001, ISO 27001, and ISO 27018
+
+Para acessar os Serviços de cloud da AWS, poderá ser usadoo AS Management console, o AWS Conmmand Line interface(CLI), ou AWS Software Development KIT(SDK´s)
+
+
+
+Now that you have an understanding of some of the key differences between traditional block
+and file storage versus cloud object storage, we can explore the basics of Amazon S3 in more
+detail. -- Estudar diferenças - Inportante
+
+Bucket names can contain up to 63 lowercase letters, numbers, hyphens, and
+periods. You can create and use multiple buckets; you can have up to 100 per account by
+default.
+
+Objects can range in size from 0 bytes up to 5TB, and a single
+bucket can store an unlimited number of objects. This means that Amazon S3 can store a
+virtually unlimited amount of data.
+
+A key can be up to 1024 bytes of Unicode UTF-8 characters,
+including embedded slashes, backslashes, dots, and dashes
+
+
+If you need to store non-critical or easily reproducible derived data (such as image
+thumbnails) that doesn’t require this high level of durability, you can choose to use Reduced
+Redundancy Storage (RRS) at a lower cost. RRS offers 99.99% durability with a lower cost of
+storage than traditional Amazon S3 storage.
+
+
+
+
+To configure an Amazon S3 bucket for static website hosting:
+1. Create a bucket with the same name as the desired website hostname.
+2. Upload the static files to the bucket.
+3. Make all the files public (world readable).
+4. Enable static website hosting for the bucket. This includes specifying an Index document
+and an Error document.
+5. The website will now be available at the S3 website URL:
+<bucket-name>.s3-website-<AWS-region>.amazonaws.com.
+6. Create a friendly DNS name in your own domain for the website using a DNS CNAME, or
+an Amazon Route 53 alias that resolves to the Amazon S3 website URL.
+7. The website will now be available at your website domain name.
+
+
+
+
+
+
+
+
+
