@@ -124,8 +124,17 @@ Use delimitadores e prefixos de objeto para organizar hierarquicamente os objeto
 Buckets do Amazon S3, mas lembre-se sempre de que o Amazon S3 não é realmente um sistema de arquivos.
 
 
+Para máxima simplicidade e facilidade de uso, use criptografia do lado do servidor com AWSmanaged
+chaves (SSE-S3 ou SSE-KMS).
+
+Você pode definir uma política de ciclo de vida do objeto em um intervalo para abortar multiparte incompleta
+uploads após um determinado número de dias. Isso irá minimizar os custos de armazenamento associados
+com uploads de várias partes que não foram concluídos.
 
 
+Se ativado em um intervalo existente, a replicação entre regiões replicará apenas novos
+objetos. Os objetos existentes não serão replicados e devem ser copiados para o novo intervalo por meio de um
+comando separado.
 
 
 *Security objectives for visibility, auditability, controllability, and agility.
